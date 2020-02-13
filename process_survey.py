@@ -21,7 +21,7 @@ class Aggregator:
             'num_rows': 0,
             'num_a_names': 0,
             'total_a_gpa': 0,
-            'profession_counts': Counter(),  # this is a risk for memory blow-up because the professions could all be unique; if you were worried about this based on the file size you could use a bloom filter instead!
+            'profession_counts': Counter(),  # this is a risk for memory blow-up because the professions could all be unique; if you were worried about this based on the file size you could use a count min sketch instead!
             'married_ages': [],
         }
 
